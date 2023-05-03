@@ -12,6 +12,13 @@
     display: flex;
 }
 
+.col-17 {
+    width: calc(100% / 6 - 20px);
+    height: 200px; /* da togliere */
+    background-color: red; /* da togliere */
+    margin: 10px;
+}
+
 .col-30 {
     width: 30%;
     height: 100%;
@@ -91,6 +98,13 @@
     padding: 20px 10px;
 }
 
+/* sezione ascoltati di recente */
+
+#recently-played h2 {
+    margin-left: 10px;
+    color: white;
+}
+
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (max-width: 1200px) {
 
@@ -98,12 +112,19 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
-
+    #recently-played .row {
+        flex-wrap: wrap;
+    }
+    .col-17 {
+        width: calc(25% - 20px);
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
-
+    .col-17 {
+        width: calc(50% - 20px);
+    }
 }
 
 /* Extra small devices (phones, 600px and down) */
