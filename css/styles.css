@@ -4,27 +4,50 @@
     box-sizing: border-box;
 }
 
+/* utilities */
+
+.row {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.col-30 {
+    width: 30%;
+    height: 100%;
+    background-color: yellow; /*da togliere */
+}
+
+.col-40 {
+    width: 40%;
+    height: 100%;
+    background-color: green; /* da togliere */
+}
+
 /* external layout */
 
 .external-container {
     display: flex;
+    width: 100vw;
+    height: 100vh;
 }
 
 .side-bar-container {
     background-color: black;
-    height: 100vh;
+    height: 100%;
     width: 200px;
 }
 
 .main-container {
     background-color: rgb(20, 25, 34);
-    width: calc(100vw - 150px);
-    height: 100vh;
+    width: calc(100% - 200px);
+    height: 100%;
+    position: relative;
 }
 
 .bottom-bar-container {
     background-color: rgb(40, 40, 40);
-    width: 100vw;
+    width: 100%;
     height: 100px;
     position: fixed;
     bottom: 0;
@@ -34,6 +57,61 @@
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 100px;
-    position: fixed;
+    position: absolute;
     top: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* top-bar */
+
+.top-bar-container button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin-right: 20px;
+}
+
+/* sezione ricerca */
+
+#ricerca {
+    margin-top: 100px;
+    color: rgb(120, 120, 120);
+}
+
+#ricerca .row {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#ricerca .row .col {
+    padding: 20px 10px;
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .side-bar-container {
+        width: 50px;
+    }
+    .main-container {
+        width: calc(100% - 50px);
+    }
 }
