@@ -12,6 +12,13 @@
     display: flex;
 }
 
+.col-15 {
+    width: calc(15% - 20px);
+    margin: 10px;
+    background-color: red; /* da togliere */
+    height: 200px;
+}
+
 .col-17 {
     width: calc(100% / 6 - 20px);
     height: 200px; /* da togliere */
@@ -31,17 +38,27 @@
     background-color: green; /* da togliere */
 }
 
+.titolo-sezione {
+    margin-left: 10px;
+    color: white;
+}
+
+.sottotitolo-sezione {
+    font-size: 12px;
+    color: rgb(120, 120, 120);
+    margin-left: 10px;
+}
+
 /* external layout */
 
 .external-container {
     display: flex;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
 }
 
 .side-bar-container {
     background-color: black;
-    height: 100%;
     width: 200px;
 }
 
@@ -98,13 +115,6 @@
     padding: 20px 10px;
 }
 
-/* sezione ascoltati di recente */
-
-#recently-played h2 {
-    margin-left: 10px;
-    color: white;
-}
-
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (max-width: 1200px) {
 
@@ -123,6 +133,12 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
     .col-17 {
+        width: calc(50% - 20px);
+    }
+    #creati-per-te .row {
+        flex-wrap: wrap;
+    }
+    .col-15 {
         width: calc(50% - 20px);
     }
 }
