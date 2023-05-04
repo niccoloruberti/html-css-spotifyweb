@@ -6,6 +6,10 @@
 
 /* utilities */
 
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 .row {
     width: 100%;
     height: 100%;
@@ -112,39 +116,103 @@
 
 /* side-bar */
 
-.top-side-bar {
+.side-bar-container .top-side-bar {
     height: 60%;
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
 }
 
-.bottom-side-bar {
-    height: 100px;
-    width: 100%;
-    background-color: purple;
+.side-bar-container .top-side-bar .logo {
+    margin: 20px 10px;
+    width: 70%;
+}
+
+.side-bar-container .top-side-bar nav {
+    margin: 20px 10px;
+}
+
+.side-bar-container .top-side-bar ul {
+    list-style-type: none;
+}
+
+.side-bar-container .top-side-bar nav li {
+    margin: 5px 0;
+}
+
+.side-bar-container .top-side-bar a {
+    text-decoration: none;
+    color: white;
+    opacity: 50%;
+}
+
+.side-bar-container .top-side-bar nav img {
+    width: 20px;
+    opacity: 50%;
 }
 
 .side-bar-container .top-side-bar .playlist {
     height: 80%;
     display: flex;
     flex-direction: column;
+    margin: 10px 0;
 }
 
-.side-bar-container .playlist h3 {
+.side-bar-container .top-side-bar .playlist h3 {
     color: white;
+    margin: 10px;
 }
 
-.side-bar-container .playlist .crea-playlist {
-    height: 30px;
-    width: 30px;
-    background-color: grey;
+.side-bar-container .top-side-bar .playlist .crea-playlist {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    color: white;
+    filter: opacity(50%);
 }
 
-.side-bar-container .playlist .elenco-playlist {
+.side-bar-container .top-side-bar .playlist .crea-playlist i {
+    font-size: 40px;
+    margin-right: 5px;
+}
+
+.side-bar-container .top-side-bar .playlist .elenco-playlist {
     height: 300px;
-    margin-top: 50px;
+    margin-top: 10px;
     overflow-y: auto;
+}
+
+.side-bar-container .top-side-bar .playlist .elenco-playlist li {
+    margin: 10px;
+    font-size: 12px;
+}
+
+.side-bar-container .bottom-side-bar {
+    height: 100px;
+    width: 100%;
+}
+
+.side-bar-container .bottom-side-bar .installa-app img, .side-bar-container .bottom-side-bar .user img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.side-bar-container .bottom-side-bar .user, .side-bar-container .bottom-side-bar .installa-app  {
+    color: white;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.side-bar-container .bottom-side-bar .installa-app {
+    filter: opacity(50%);
+    padding-bottom: 10px;
+    font-size: 12px;
+    border-bottom: 1px solid white;
+}
+
+.side-bar-container .bottom-side-bar .user {
+    font-weight: 700;
 }
 
 /* sezione ricerca */
@@ -201,5 +269,14 @@
     }
     .top-bar-container {
         width: calc(100% - 50px);
+    }
+}
+
+/* scomparsa bottom-side-bar */
+
+@media screen and (max-height: 700px) {
+    .bottom-side-bar {
+        position: fixed;
+        bottom: 0;
     }
 }
