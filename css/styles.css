@@ -116,6 +116,10 @@ body {
 
 /* side-bar */
 
+#logo-small {
+    display: none;
+}
+
 .side-bar-container .top-side-bar {
     height: 60%;
     display: flex;
@@ -269,6 +273,15 @@ body {
     }
     .top-bar-container {
         width: calc(100% - 50px);
+    }
+    .side-bar-container .top-side-bar .playlist, .side-bar-container .top-side-bar nav span, .side-bar-container .bottom-side-bar span {
+        display: none;
+    }
+    #logo-full {
+        display: none;
+    }
+    #logo-small {
+        display: block;
     }
 }
 
