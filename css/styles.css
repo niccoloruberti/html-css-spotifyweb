@@ -130,7 +130,7 @@ body {
 }
 
 .side-bar-container .top-side-bar nav {
-    margin: 20px 10px;
+    margin: 20px 0px;
 }
 
 .side-bar-container .top-side-bar ul {
@@ -138,7 +138,11 @@ body {
 }
 
 .side-bar-container .top-side-bar nav li {
-    margin: 5px 0;
+    padding: 5px 10px;
+}
+
+.side-bar-container .top-side-bar nav li:first-of-type {
+    border-left: 3px solid lime;
 }
 
 .side-bar-container .top-side-bar a {
@@ -230,6 +234,17 @@ body {
 
 #ricerca .row .col {
     padding: 20px 10px;
+}
+
+.active:after {
+    display: block;
+    content: '';
+    width: 60px;
+    height: 2px;
+    background-color: lime;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 /* sezione ascoltati di recente */
