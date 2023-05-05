@@ -19,14 +19,10 @@ body {
 .col-15 {
     width: calc(15% - 20px);
     margin: 10px;
-    background-color: red; /* da togliere */
-    height: 200px;
 }
 
 .col-17 {
     width: calc(100% / 6 - 20px);
-    height: 200px; /* da togliere */
-    background-color: red; /* da togliere */
     margin: 10px;
 }
 
@@ -43,8 +39,9 @@ body {
 }
 
 .titolo-sezione {
-    margin-left: 10px;
+    margin: 25px 10px;
     color: white;
+    font-size: 30px;
 }
 
 .sottotitolo-sezione {
@@ -233,6 +230,89 @@ body {
 
 #ricerca .row .col {
     padding: 20px 10px;
+}
+
+/* sezione ascoltati di recente */
+
+#recently-played .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#recently-played .content img {
+    width: 100%;
+}
+
+#recently-played .content h3 {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+#recently-played .content h5 {
+    color: gray;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* sezione creato per te */
+
+#creati-per-te h2 {
+    margin-bottom: 5px;
+}
+
+#creati-per-te p {
+    margin-bottom: 15px;
+}
+
+#creati-per-te .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#creati-per-te .content img {
+    width: 100%;
+}
+
+#creati-per-te .content h3 {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* sezione artisti più popolari */
+
+#artisti-popolari h2 {
+    margin-bottom: 5px;
+}
+
+#artisti-popolari p {
+    margin-bottom: 15px;
+}
+
+#artisti-popolari .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#artisti-popolari .content img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+#artisti-popolari .content h3 {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 10px 0;
+    text-align: center;
 }
 
 /* bottom-bar */
