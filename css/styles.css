@@ -156,6 +156,10 @@ body {
     filter: opacity(50%);
 }
 
+.side-bar-container .top-side-bar a:hover {
+    filter: opacity(100%);
+}
+
 .side-bar-container .top-side-bar nav img {
     width: 20px;
     filter: opacity(50%);
@@ -179,6 +183,10 @@ body {
     margin-left: 10px;
     color: white;
     filter: opacity(50%);
+}
+
+.side-bar-container .top-side-bar .playlist .crea-playlist:hover {
+    filter: opacity(100%);
 }
 
 .side-bar-container .top-side-bar .playlist .crea-playlist i {
@@ -219,6 +227,10 @@ body {
     padding-bottom: 10px;
     font-size: 12px;
     border-bottom: 1px solid white;
+}
+
+.side-bar-container .bottom-side-bar .installa-app:hover {
+    filter: opacity(100%);
 }
 
 .side-bar-container .bottom-side-bar .user {
