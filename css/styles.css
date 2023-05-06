@@ -252,6 +252,10 @@ body {
     transform: translateX(-50%);
 }
 
+#ricerca .col a:hover {
+    color: white;
+}
+
 /* sezione ascoltati di recente */
 
 #recently-played .content {
